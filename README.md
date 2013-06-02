@@ -1,0 +1,1 @@
+Chrome extension that notifies you about the new events in the Trac. Supports watching multiple Trac projects and authentication (Basic and Forms).

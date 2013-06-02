@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<title>Popup - Trac Notifier</title>
+<style>
+html { font-family: sans-serif; font-size: 13px; overflow: hidden; background: url(images/vertbars.png) repeat-x; }
+body { padding: 0; margin: 0; width: 300px; }
+p { margin: 0.5em; }
+ul { margin: 0 .5em; padding: .5em; list-style: none; background: #fff; border: 1px solid #e4e4e4; border-radius: .5em; box-shadow: .2em .3em 1.5em #eee; }
+ul li { margin: 0; padding: 0; clear: both; }
+ul input { position: absolute; vertical-align: middle; }
+ul span { margin-left: 2em; display: block; }
+a { color: #b00; border-bottom: 1px dotted #bbb; text-decoration: none; }
+ul i { display: block; font-size: 11px; margin: .2em 0; max-height: 40px; overflow: hidden; text-overflow: ellipsis; position: relative; }
+ul i::after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; min-height: 40px; background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 60%,rgba(255,255,255,1) 100%);
+   }
+.actions { clear: both; }
+.actions label { font-size: 11px; color: #888; }
+.actions label input { width: 4em; text-align: center; font-size: 11px; }
+.right { float: right; }
+li.loading { display: none; clear: both; text-align: center; color: #999; font-style: italic; }
+body.loading li.loading { display: block; }
+</style>
+</head><body>
+	<p>Notify of <b>trac</b> changes: <a href="options.html" class="right" target="_blank">Options</a></p>
+	<ul id="urls">
+		<li class="loading">Loading...</li>
+	</ul>
+	<p class="actions"><label>Refresh every <input id="refresh" type="number" value="30" /> seconds.</label> <input class="right" type="submit" id="done" value="Done" /></p>
+<script src="popup.js"></script>
+</body></html>

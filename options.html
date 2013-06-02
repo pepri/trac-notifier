@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<title>Options - Trac Notifier</title>
+<style>
+html { font-family: sans-serif; font-size: 13px; background: url(images/vertbars.png) repeat-x; }
+body { padding: 0; margin: auto; width: 800px; }
+form { background: #fff; margin: 2em 0; border: 1px solid #e4e4e4; border-radius: .5em; box-shadow: .2em .3em 1.5em #eee; }
+h1 { font-weight: normal; }
+h2 { margin: .5em; font-weight: normal; }
+p { margin: .5em; }
+ul { margin: .5em; padding: .5em; list-style: none; }
+ul li { margin: 0; padding: 0; clear: both; }
+ul input { position: absolute; vertical-align: middle; }
+ul span { margin-left: 2em; display: block; }
+a { color: #b00; border-bottom: 1px dotted #bbb; text-decoration: none; }
+ul i { display: block; font-size: 11px; margin: .2em 0; max-height: 40px; overflow: hidden; text-overflow: ellipsis; position: relative; }
+ul i::after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; min-height: 40px; background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 60%,rgba(255,255,255,1) 100%);
+   }
+.actions { clear: both; }
+.actions label { font-size: 11px; color: #888; }
+.actions label input { font-size: 11px; line-height: 11px; }
+.actions label input[type=number] { width: 4em; text-align: center; }
+.right { float: right; }
+li.loading { display: none; clear: both; text-align: center; color: #999; font-style: italic; }
+body.loading li.loading { display: block; }
+a.delete { float: right; margin:.7em; }
+</style>
+</head><body class="loading">
+	<h1>Trac Notifier Options</h1>
+	<p>Notify of <b>trac</b> changes:</p>
+	<div id="tracs"></div>
+<script src="options.js"></script>
+</body></html>
